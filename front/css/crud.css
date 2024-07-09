@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* font-size: 30px; */
+}
+
+:root {
+  --ColorEncabezado: #07531a;
+  --ColorFondo: url(../img/fondoverde.jpg);
+  --ColorFuente: #e3ebc6;
+  --ColorLink: #c813ec;
+}
+
+h2 {
+  color: var(--ColorFuente);
+}
+
+.form-group {
+  color: var(--ColorFuente);
+}
+
+.table {
+  background-color: var(--ColorFondo);
+  color: var(--ColorFuente);
+}
+
+.btn-guardar {
+  background-color: green;
+  color: var(--ColorFuente);
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.btn-guardar:hover {
+  transform: scale(1.1);
+}
+
+.btn-eliminar {
+  font-size: 15px;
+  background-color: var(--ColorFondo);
+  color: red;
+  padding: 3px;
+}
+
+.btn-editar {
+  font-size: 15px;
+  background-color: var(--ColorFondo);
+  color: green;
+  padding: 3px;
+}
+
+footer {
+  background: var(--ColorFondo);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 5%;
+  height: 45px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  border-top: 2px solid var(--ColorFuente);
+
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials li {
+  margin: 0 5px;
+}
+
+.socials a i {
+  text-decoration: none;
+  color: var(--ColorFuente);
+  width: 20px;
+  /* padding: 10px; */
+  transition: all 0.3s;
+}
+
+.socials a i:hover {
+  color: var(--ColorLink);
+  transform: scale(1.25);
+}
+
+.derechos p {
+  display: flex;
+  text-align: justify;
+  font-size: 14px;
+  color: var(--ColorFuente);
+  padding-left: 30px;
+  transition: all 0.3s;
+}

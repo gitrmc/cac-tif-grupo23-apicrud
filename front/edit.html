@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Usuario</title>
+    <link rel="ICON" type="iMAGEN/PNG" href="img/favicon.ico">
+    <script src="https://kit.fontawesome.com/b4496fc6c4.js" crossorigin="anonymous"></script>
+    <!-- Fuentes Fonawesome -->
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/crud.css">
+
+</head>
+
+<body> <!-- Cuerpo -->
+
+    <header class="header">
+        <nav class="nav-cabecera">
+            <div class="logo">
+                <a href="https://nodejs.org/en"><img src="img/logonode2.png" alt="Logo marca"></a>
+            </div>
+            <div class="logo-cac">
+                <a href="https://buenosaires.gob.ar/educacion/codo-codo-40"><img width="140px"
+                        src="img/logoCACsinbloque.png" alt="CAC"></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="index.html" class="nav-menu-link">Integrantes</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="links.html" class="nav-menu-link">Links</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="crud.html" class="nav-menu-link">API CRUD</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> <!-- Principal Editar -->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Editar Usuario</h2>
+                    <form id="form-editar-usuario">
+                        <input type="hidden" id="usuario-id">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="form-control" id="editar-nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" class="form-control" id="editar-apellido" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dni">DNI:</label>
+                            <input type="text" class="form-control" id="editar-dni" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="direccion">Dirección:</label>
+                            <input type="text" class="form-control" id="editar-direccion" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="correo">Correo electrónico:</label>
+                            <input type="email" class="form-control" id="editar-correo" required>
+                        </div>
+                        <button type="submit" class="btn-guardar">Guardar Cambios</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <ul class="socials">
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://github.com/" target="_blank"> <i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            </li>
+            <li><a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+        </ul>
+        <div class="derechos">
+            <p> Comisión #24127 - Grupo 23 <br> © Derechos resevados 2024</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!-- CDN Axios -->
+    <script src="./js/edit.js"></script> <!-- JS Edit -->
+
+</body>
+
+</html>
