@@ -27,7 +27,7 @@ Para hacer funcionar el API CRUD necesitamos tener instalado el programa XAMPP q
 3. **Ejecución del Frontend:**
    - Desde la carpeta `front`, abrir el archivo `index.html` con "Open with Live Server".
    - Desde cualquier integrante o desde el menú "API CRUD", empezar a cargar los datos.
-   - También se puede probar directamente con sin utilizar un front con Postman o Thunder Client.
+   - También se puede probar directamente sin utilizar un front con Postman o Thunder Client.
 
 ## Uso
 
