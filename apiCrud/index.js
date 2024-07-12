@@ -43,5 +43,5 @@ const conexiondb = async () => {
 // Pongo a funcionar el servidor.-
 app.listen(port, () => {
     conexiondb();
-    console.log(`Server ok en el puerto ${port}`);
+    console.log(`Server ok en el puerto http//localhost:${port}`);
 });

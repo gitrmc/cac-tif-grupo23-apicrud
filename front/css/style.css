@@ -11,6 +11,7 @@
   --ColorFondo: #f7faf9;
   --ColorFuente: #e3ebc6;
   --ColorLink: #c813ec;
+  --ColorFondo1: url(../img/fondoverde.jpg);
 }
 
 body {
@@ -97,7 +98,6 @@ body {
   align-items: center;
 }
 
-
 .nav-menu-link {
   color: var(--ColorFuente);
   text-decoration: none;
@@ -105,14 +105,11 @@ body {
   transition: all 0.3s;
 }
 
-
 .nav-menu-link:hover {
   color: var(--ColorLink);
   transform: scale(1.3);
   /* transition: 0.5s; */
 }
-
-
 
 /***** Integrantes *****/
 .Integrantes {
@@ -205,6 +202,53 @@ footer {
   color: var(--ColorFuente);
   padding-left: 30px;
   transition: all 0.3s;
+}
+
+.form-group {
+  color: var(--ColorFuente);
+}
+
+.table {
+  background-color: var(--ColorFondo1);
+  color: var(--ColorFondo);
+  
+}
+
+.btn-guardar {
+  background-color: green;
+  color: var(--ColorFuente);
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.btn-guardar:hover {
+  transform: scale(1.1);
+}
+
+.btn-eliminar {
+  font-size: 15px;
+  background-color: var(--ColorFondo1);
+  color: red;
+  padding: 3px;
+}
+
+.btn-eliminar:hover {
+  transform: scale(1.1);
+}
+
+.btn-editar {
+  font-size: 15px;
+  background-color: var(--ColorFondo1);
+  color: green;
+  padding: 3px;
+}
+
+.btn-editar:hover {
+  transform: scale(1.1);
+}
+
+h2 {
+  color: var(--ColorFuente);
 }
 
 
