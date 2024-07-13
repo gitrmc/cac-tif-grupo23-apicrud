@@ -33,7 +33,7 @@ Para hacer funcionar el API CRUD necesitamos tener instalado el programa XAMPP q
    - Ejecutar un terminal en esta carpeta.
    - Correr el comando `npm i` para instalar los módulos necesarios.
    - Asegurarse de que XAMPP esté ejecutando MySQL con la base de datos configurada.
-   - Ejecutar el comando `npm run dev` para correr el API.
+   - Ejecutar el comando `npm run dev` para correr el API e ingresamos en http://localhost:3030.
 
 3. **Ejecución del Frontend:**
    - Desde la carpeta `front`, abrir el archivo `index.html` con "Open with Live Server".
