@@ -15,7 +15,18 @@ Para hacer funcionar el API CRUD necesitamos tener instalado el programa XAMPP q
 1. **Configuración de la base de datos:**
    - Instalar y ejecutar XAMPP.
    - Crear la base de datos `api-crud-usuarios`.
+   CREATE DATABASE `api-crud-usuarios`;
    - Configurar la tabla `usuarios` con los campos: `id`, `nombre`, `apellido`, `dni`, `direccion`, `correo`, `createdAt`, `updateAt`.
+   CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100),
+    apellido VARCHAR(100),
+    dni VARCHAR(20),
+    direccion VARCHAR(255),
+    correo VARCHAR(100),
+    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+   );
 
 2. **Instalación del API CRUD:**
    - Navegar a la carpeta `apiCrud`.

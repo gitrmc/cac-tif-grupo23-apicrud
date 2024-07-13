@@ -1,6 +1,8 @@
 // Requerir o importar express.-
 const express = require("express");
 
+const path = require("path");
+
 // Instanciamos express en la variable app.-
 const app = express();
 
@@ -23,8 +25,16 @@ app.use(cors());
 app.use(express.json());
 
 // Muestro mensaje en ruta home /.-
-app.get ("/",(req,res)=>{
-    res.send("Estas en el home /, ir a /usuarios");
+// app.get("/", (req, res) => {
+//     res.send("Estas en el home /, ir a /usuarios");
+// });
+
+// Configurar la ruta estática a la carpeta 'front'
+app.use(express.static(path.join(__dirname, '..', 'front')));
+
+// Ruta para servir el archivo index.html
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'front', 'index.html'));
 });
 
 // Configuro las rutas que se van a utilizar y estan definidas en el archivo usuariosRouter.-
@@ -43,5 +53,5 @@ const conexiondb = async () => {
 // Pongo a funcionar el servidor.-
 app.listen(port, () => {
     conexiondb();
-    console.log(`Server ok en el puerto http//localhost:${port}`);
+    console.log(`Server ok en el puerto http://localhost:${port}`);
 });
